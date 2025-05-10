@@ -1,0 +1,152 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: url('pic.png') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+}
+
+.Header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.site-logo {
+  width: 70px;
+  height: auto;
+}
+
+.header-text h1 {
+  margin: 0;
+  font-size: 2em;
+  color: white;
+  -webkit-text-stroke: 1px #ffffff;
+  text-shadow: 2px 4px 8px rgba(0.9, 0.9, 0.9, 0.9);
+}
+
+.header-text p {
+  margin: 0;
+  font-size: 1em;
+  color: white;
+  -webkit-text-stroke: 0.5px #ffffff;
+  text-shadow: 2px 4px 8px rgba(1.0, 1.0, 0.9, 0.9);
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 10px 0;
+  max-width: 600px;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
+nav a {
+  font-size: 13px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 4px 8px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+  transform: scale(1.1);
+  color: #00ffff;
+}
+
+.Services,
+.Graphics-Design,
+.Frontend-Dev,
+.Data-Entry,
+.Product-Branding,
+.Contact,
+.Form,
+.About,
+.FormSection {
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, rgba(0, 123, 255, 0.8), rgba(255, 0, 102, 0.8));
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.Contact a {
+  color: white;
+  text-decoration: none;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+.FormSection form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.FormSection input,
+.FormSection button {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  width: 100%;
+}
+
+.FormSection button {
+  background-color: #00b894;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.FormSection button:hover {
+  background-color: #00997a;
+}
+
+.Footer {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.85);
+  color: white;
+  margin-top: 20px;
+}
+
+.Footer .social-links {
+  margin-top: 10px;
+}
+
+.Footer .social-links a {
+  margin: 0 10px;
+  color: white;
+  font-size: 24px;
+  transition: color 0.3s ease;
+}
+
+.Footer .social-links a:hover {
+  color: #00ffff;
+}
+
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .FormSection input,
+  .FormSection button {
+    font-size: 16px;
+  }
+}
